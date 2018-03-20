@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Fabio Lucas</title>
+</head>
+<body>
+    <div>
+    <h1>Formulario de cadastro</h1>
+    </div>
+
+    <div>
+        <form>
+            <p>
+            <label for='name'>Nome Completo: </label>
+            <input required type="text" name="Nome" size="40" id='nome' placeholder="Digite seu nome"/>
+            </p>
+            <p>
+            <label for='email'>Digite o seu e-mail: </label>
+            <input required type='email' size='38' name='email' id='email' placeholder="Digite seu e-mail">
+            </p>
+            <p>
+            <label for='sexo'>Sexo: </label>
+            <input type='radio' checked name='sexo' id='feminino' value='f'>
+            <label for='feminino'>Feminino</label>
+            <input type='radio' name='sexo' id='masculino' value='m'>
+            <label for='masculino'>Masculino</label>
+            </p>
+
+            <p>
+            <label for='data'>Data de aniversario: </label>
+            <input type="date" name="data" id='data' />
+            </p>
+
+            <p>
+                <label for='grau'>Grau de escolaridade: </label>
+                <select name="grau" id="grau">
+                    <option value="EnsMed">Ensino Medio</option>
+                    <option  value="SupComp" selected>Superior Completo</option>
+                    <option value="PosGrad">Pos-Graduação</option>
+                    <option value="Mest">Mestrado</option>
+                    <option value="Dou">Doutoradp</option>
+                </select>
+            </p>
+            <p>
+                <label for='estilos'>Estilos musicais preferido: </label>
+                <select name="estilos" id="estilos" multiple size='5'>
+                        <option value="ro">Rock</option>
+                        <option  value="fun">Funk</option>
+                        <option value="sam">Samba</option>
+                        <option value="pago">Pagode</option>
+                        <option value="pop">Pop</option>
+                    </select>
+            </p>
+            <p>
+                <label for='usuario'>Nome do Usuario: </label>
+                <input type="text" name="usuario" size="40" id='nome' placeholder="Digite nome do usuario"/>
+            </p>
+
+            <p>
+            <label for='senha'>Senha: </label>
+            <input type="password" name="senha" id='senha' placeholder="Crie uma nova senha"/>
+            </p>
+            <p>
+            <label for='cor'>Cor Preferida: </label>
+            <input type="color" name="cor" id='cor'/>
+            </p>
+
+            <p>
+            <label for='numeros'>Quantidade de filhos: </label>
+            <input type="number" name="numeros" id='numero' />
+            </p>
+            <p>
+            <label for='veiculos'>Quantidade de veiculos: </label>
+            0 <input type="range" name="veiculos" id='veiculos'/> 5
+            </p>
+            <p>
+            <label for='texto'>Comentario sobre o site: </label>
+            <textarea name="texto" id="texto" cols="30" rows="10"></textarea>
+            </p>
+            <p>
+            <input type='checkbox' name='spam' id='spam'>
+            Deseja receber ofertas via e-mail?
+            </p>
+
+            <input type='submit' value='Enviar'>
+            <input type='reset' value='Limpar'>
+            <input type='hidden' name='id' id='id' value='teste'>
+
+        </form>
+    </div>
+    <div id='rodape' aling="center">
+        <p>Formulario padrão</p>
+        <p>Front End - fomulario HTML - Exercicios - Prof Raphael Gomide</p>
+    </div>
+
+</body>
+</html>
